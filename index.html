@@ -12,6 +12,8 @@
     <header>
         <a href="#" class="logo">My Portfolio</a>
 
+        <i class="fa-solid fa-bars menu-icon" id="menu-icon"></i>
+
         <nav>
             <a href ="index.html" class="active">Home</a>
             <a href="skills.html">Skills</a> 
@@ -39,5 +41,13 @@
         </div>        
     
     </section>
+<script>
+const menuIcon = document.getElementById("menu-icon");
+const navbar = document.querySelector("nav");
+
+menuIcon.onclick = () => {
+    navbar.classList.toggle("active");
+};
+</script>
 </body>
 </html>
